@@ -1,0 +1,20 @@
+CREATE TABLE [EntryExit].[EmployeeAttendance](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[EmployeeNumber] [int] NOT NULL,
+	[CalDate] [date] NOT NULL,
+	[IsSwipe] [bit] NOT NULL,
+	[IsTravel] [bit] NOT NULL,
+	[IsLeave] [bit] NOT NULL,
+	[IsNoSwipe] [bit] NOT NULL,
+	[IsWeekend] [bit] NOT NULL,
+	[created_date] [datetime2](7) NULL,
+	[updated_date] [datetime2](7) NULL,
+	[HoPCount] [bit] NULL,
+	[LeaveType] [int] NULL,
+	[HOP_TYPE] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
