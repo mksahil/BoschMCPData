@@ -1,0 +1,10 @@
+CREATE TABLE [EntryExit].[EmployeeSwapdetails](
+	[EmpNumber] [int] NOT NULL,
+	[EmpName] [nvarchar](500) NOT NULL,
+	[EnteredDateTime] [datetime] NOT NULL,
+	[ReaderLocation] [nvarchar](10) NOT NULL,
+	[ReaderStatus] [bit] NOT NULL,
+	[EnteredDate] [date] NOT NULL,
+	[created_date] [datetime2](7) NULL
+) ON [PRIMARY]
+GO
